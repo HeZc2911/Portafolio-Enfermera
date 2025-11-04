@@ -32,7 +32,7 @@ const servicios = [
         description: "Administración segura y experta de inyecciones, vacunas, medicamentos intravenosos y subcutáneos. Utilizo técnica estéril, manejo adecuado del dolor y seguimiento de posibles reacciones adversas, garantizando comfort y seguridad en cada procedimiento.",
         precio: "25$ por visita",
         icon: "/Portafolio-Enfermera/jeringa.png",
-        img: "/Portafolio-Enfermera/Inyeccion.jpeg",
+        img: "/Portafolio-Enfermera/Inyeccion.jpg",
     },
     {
         id: 5,

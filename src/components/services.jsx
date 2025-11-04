@@ -7,7 +7,7 @@ const servicios = [
         title: "Cuidado de pacientes post-operatorios",
         description: "Atención especializada para una recuperación óptima después de procedimientos quirúrgicos. Incluye monitoreo constante de signos vitales, cuidado profesional de heridas, administración puntual de medicamentos analgésicos y preventivos, así como educación al paciente sobre los cuidados necesarios durante el proceso de cicatrización.",
         precio: "40$ por visita",
-        icon: "/healthcare.png",
+        icon: "/Portafolio-Enfermera/healthcare.png",
         img: "/Portafolio-Enfermera/Cuidado.jpg",
     },
     {
@@ -15,7 +15,7 @@ const servicios = [
         title: "Administración de Medicamentos",
         description: "Aplicación precisa y segura de tratamientos médicos prescritos, con riguroso control de horarios, dosificación y seguimiento de posibles efectos secundarios. Garantizo la técnica adecuada para cada tipo de medicamento, ya sea oral, intramuscular o subcutáneo.",
         precio: "30$ por visita",
-        icon: "/medicinas.png",
+        icon: "/Portafolio-Enfermera/medicinas.png",
         img: "/Portafolio-Enfermera/adminmedicamentos.webp",
     },
     {
@@ -23,7 +23,7 @@ const servicios = [
         title: "Control de Signos Vitales",
         description: "Seguimiento profesional y detallado de presión arterial, temperatura corporal, frecuencia cardiaca, respiratoria y saturación de oxígeno. Este monitoreo constante permite detectar cambios tempranos, prevenir complicaciones y ajustar tratamientos según la evolución del paciente.",
         precio: "50$ por visita",
-        icon: "/signos.png",
+        icon: "/Portafolio-Enfermera/signos.png",
         img: "/Portafolio-Enfermera/signosvitales.jpg",
     },
     {
@@ -31,7 +31,7 @@ const servicios = [
         title: "Inyectología",
         description: "Administración segura y experta de inyecciones, vacunas, medicamentos intravenosos y subcutáneos. Utilizo técnica estéril, manejo adecuado del dolor y seguimiento de posibles reacciones adversas, garantizando comfort y seguridad en cada procedimiento.",
         precio: "25$ por visita",
-        icon: "/jeringa.png",
+        icon: "/Portafolio-Enfermera/jeringa.png",
         img: "/Portafolio-Enfermera/Inyeccion.jpeg",
     },
     {
@@ -39,7 +39,7 @@ const servicios = [
         title: "Atención Geriátrica",
         description: "Cuidado integral y compasivo diseñado específicamente para adultos mayores. Incluye acompañamiento en actividades diarias, prevención de caídas, manejo de condiciones crónicas como diabetes e hipertensión, y apoyo emocional para mejorar su calidad de vida",
         precio: "60$ por visita",
-        icon: "/geriatria.png",
+        icon: "/Portafolio-Enfermera/geriatria.png",
         img: "/Portafolio-Enfermera/ancianos.webp",
     },
     {
@@ -47,7 +47,7 @@ const servicios = [
         title: "Educación en Salud",
         description: "Programas de enseñanza personalizados que empoderan al paciente y su familia. Cubro temas como autocuidado, manejo de condiciones médicas específicas, prevención de enfermedades, alimentación saludable y reconocimiento de signos de alarma que requieren atención médica",
         precio: "30$ por hora",
-        icon: "/educacion.png",
+        icon: "/Portafolio-Enfermera/educacion.png",
         img: "/Portafolio-Enfermera/educacionsalud.jpg",
      }
 ];
@@ -104,6 +104,7 @@ export default function Services() {
                 alt={service.title}
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 transition={{ type: "spring", stiffness: 400 }}
+                loading="lazy"
               />
               <h2 className="text-xl tracking-tight">{service.title}</h2>
             </motion.div>
@@ -139,6 +140,7 @@ export default function Services() {
                     className="h-full object-cover transform translate-y-[-3%] filter drop-shadow-2xl rounded-lg" 
                     src={servicioSeleccionado.img} 
                     alt="imagen del servicio" 
+                    loading="lazy"
                   />
                 </motion.div>
                 

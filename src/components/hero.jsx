@@ -25,8 +25,10 @@ export default function Hero() {
       <div className="absolute inset-0">
         {imagenes.map((imagen, index) => (
           <img
+            loading="eager"
             key={index}
             src={imagen}
+            alt="Hero"
             className={`
               absolute inset-0 w-full h-full object-cover 
               transition-opacity duration-1000

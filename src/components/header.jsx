@@ -39,6 +39,7 @@ export default function Header() {
             whileHover={{ scale: 1.05 }}
           >
             <img 
+              loading='eager'
               src="/Portafolio-Enfermera/Logo-removebg-preview.png"
               alt="logo" 
               className="w-24 h-24"

@@ -20,7 +20,8 @@ function Loading() {
         transition={{ type: "spring", stiffness: 200 }}
       >
         <motion.img
-          src="/Logo-removebg-preview.png"
+          loading='eager'
+          src="/Portafolio-Enfermera/Logo-removebg-preview.png"
           alt="Loading"
           className="w-32 h-32 mx-auto mb-4"
           animate={{ 

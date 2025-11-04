@@ -8,7 +8,7 @@ const servicios = [
         description: "Atención especializada para una recuperación óptima después de procedimientos quirúrgicos. Incluye monitoreo constante de signos vitales, cuidado profesional de heridas, administración puntual de medicamentos analgésicos y preventivos, así como educación al paciente sobre los cuidados necesarios durante el proceso de cicatrización.",
         precio: "40$ por visita",
         icon: "/healthcare.png",
-        img: "/portafolio-isabella/Cuidado.jpg",
+        img: "/Portafolio-Enfermera/Cuidado.jpg",
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ const servicios = [
         description: "Aplicación precisa y segura de tratamientos médicos prescritos, con riguroso control de horarios, dosificación y seguimiento de posibles efectos secundarios. Garantizo la técnica adecuada para cada tipo de medicamento, ya sea oral, intramuscular o subcutáneo.",
         precio: "30$ por visita",
         icon: "/medicinas.png",
-        img: "/portafolio-isabella/adminmedicamentos.webp",
+        img: "/Portafolio-Enfermera/adminmedicamentos.webp",
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const servicios = [
         description: "Seguimiento profesional y detallado de presión arterial, temperatura corporal, frecuencia cardiaca, respiratoria y saturación de oxígeno. Este monitoreo constante permite detectar cambios tempranos, prevenir complicaciones y ajustar tratamientos según la evolución del paciente.",
         precio: "50$ por visita",
         icon: "/signos.png",
-        img: "/portafolio-isabella/signosvitales.jpg",
+        img: "/Portafolio-Enfermera/signosvitales.jpg",
     },
     {
         id: 4,
@@ -32,7 +32,7 @@ const servicios = [
         description: "Administración segura y experta de inyecciones, vacunas, medicamentos intravenosos y subcutáneos. Utilizo técnica estéril, manejo adecuado del dolor y seguimiento de posibles reacciones adversas, garantizando comfort y seguridad en cada procedimiento.",
         precio: "25$ por visita",
         icon: "/jeringa.png",
-        img: "/portafolio-isabella/Inyeccion.jpeg",
+        img: "/Portafolio-Enfermera/Inyeccion.jpeg",
     },
     {
         id: 5,
@@ -40,7 +40,7 @@ const servicios = [
         description: "Cuidado integral y compasivo diseñado específicamente para adultos mayores. Incluye acompañamiento en actividades diarias, prevención de caídas, manejo de condiciones crónicas como diabetes e hipertensión, y apoyo emocional para mejorar su calidad de vida",
         precio: "60$ por visita",
         icon: "/geriatria.png",
-        img: "/portafolio-isabella/ancianos.webp",
+        img: "/Portafolio-Enfermera/ancianos.webp",
     },
     {
         id: 6,
@@ -48,7 +48,7 @@ const servicios = [
         description: "Programas de enseñanza personalizados que empoderan al paciente y su familia. Cubro temas como autocuidado, manejo de condiciones médicas específicas, prevención de enfermedades, alimentación saludable y reconocimiento de signos de alarma que requieren atención médica",
         precio: "30$ por hora",
         icon: "/educacion.png",
-        img: "/portafolio-isabella/educacionsalud.jpg",
+        img: "/Portafolio-Enfermera/educacionsalud.jpg",
      }
 ];
 

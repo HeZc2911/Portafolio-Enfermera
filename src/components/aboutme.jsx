@@ -14,7 +14,7 @@ export default function Aboutme() {
                     transition={{ duration: 0.6 }}
                 >
                     <motion.img 
-                        src="/portafolio-isabella/foto Isabb.png" 
+                        src="/Portafolio-Enfermera/foto Isabb.png" 
                         alt="Isabella Palacio - Aux Enfermería" 
                         className="w-80 h-100"
                         whileHover={{ scale: 1.05 }}

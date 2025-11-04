@@ -108,7 +108,7 @@ export default function Header() {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
               >
-                {['Inicio', 'Servicios', 'Educación', 'Sobre Mí'].map((item, index) => (
+                {['Inicio', 'Servicios', 'Sobre Mí'].map((item, index) => (
                   <motion.a
                     key={item}
                     href={`#${item}`}

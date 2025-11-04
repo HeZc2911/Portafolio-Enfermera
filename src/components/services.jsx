@@ -140,7 +140,6 @@ export default function Services() {
                     className="h-full object-cover transform translate-y-[-3%] filter drop-shadow-2xl rounded-lg" 
                     src={servicioSeleccionado.img} 
                     alt="imagen del servicio" 
-                    loading="lazy"
                   />
                 </motion.div>
                 

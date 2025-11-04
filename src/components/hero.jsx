@@ -5,9 +5,9 @@ export default function Hero() {
   const [imagenActual, setImagenActual] = useState(0);
 
   const imagenes = [
-    "/enfermera.jpg",
-    "/enfermera1.jpg", 
-    "/enfermera2.jpg",
+    "/portafolio-isabella/enfermera.jpg",
+    "/portafolio-isabella/enfermera1.jpg", 
+    "/portafolio-isabella/enfermera2.jpg",
   ]
 
   const siguienteImagen = () => {

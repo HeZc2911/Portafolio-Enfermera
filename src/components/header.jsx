@@ -39,7 +39,7 @@ export default function Header() {
             whileHover={{ scale: 1.05 }}
           >
             <img 
-              src="/Logo-removebg-preview.png"
+              src="/portafolio-isabella/Logo-removebg-preview.png"
               alt="logo" 
               className="w-24 h-24"
             />

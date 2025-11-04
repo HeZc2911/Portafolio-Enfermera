@@ -16,7 +16,7 @@ const servicios = [
         description: "Aplicación precisa y segura de tratamientos médicos prescritos, con riguroso control de horarios, dosificación y seguimiento de posibles efectos secundarios. Garantizo la técnica adecuada para cada tipo de medicamento, ya sea oral, intramuscular o subcutáneo.",
         precio: "30$ por visita",
         icon: "/Portafolio-Enfermera/medicinas.png",
-        img: "/Portafolio-Enfermera/adminmedicamentos.webp",
+        img: "/Portafolio-Enfermera/adminmedicamentos.jpg",
     },
     {
         id: 3,
@@ -40,7 +40,7 @@ const servicios = [
         description: "Cuidado integral y compasivo diseñado específicamente para adultos mayores. Incluye acompañamiento en actividades diarias, prevención de caídas, manejo de condiciones crónicas como diabetes e hipertensión, y apoyo emocional para mejorar su calidad de vida",
         precio: "60$ por visita",
         icon: "/Portafolio-Enfermera/geriatria.png",
-        img: "/Portafolio-Enfermera/ancianos.webp",
+        img: "/Portafolio-Enfermera/ancianos.jpg",
     },
     {
         id: 6,
@@ -114,43 +114,47 @@ export default function Services() {
         <AnimatePresence>
           {servicioSeleccionado && (
             <motion.div 
-              className="fixed inset-0 z-50 bg-purple-900/50 flex items-center justify-center"
+              className="fixed inset-0 z-50 bg-purple-900/50 flex items-center justify-center p-4"
               onClick={() => setServicioSeleccionado(null)}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
               <motion.div 
-                className="w-[140vh] h-[50vh] grid grid-cols-[6%_37%_57%] bg-white shadow-lg rounded-lg border-l-4 border-purple-500"
+                className="w-full max-w-6xl h-auto max-h-[90vh] lg:w-[140vh] lg:h-[50vh] bg-white shadow-lg rounded-lg border-l-4 border-purple-500 
+                           lg:grid lg:grid-cols-[6%_37%_57%] flex flex-col"
                 initial={{ opacity: 0, scale: 0.8, y: 50 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.8, y: 50 }}
                 transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <div></div>
+                {/* Espacio del 6% - Solo en desktop */}
+                <div className="hidden lg:block"></div>
                 
+                {/* Imagen - EXACTAMENTE como estaba en desktop */}
                 <motion.div 
-                  className="flex h-[53vh] justify-center"
+                  className="flex h-64 lg:h-[53vh] justify-center overflow-visible"
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 }}
                 >
                   <img 
-                    className="h-full object-cover transform translate-y-[-3%] filter drop-shadow-2xl rounded-lg" 
+                    className="h-full object-cover lg:transform lg:translate-y-[-3%] lg:filter lg:drop-shadow-2xl lg:rounded-lg"
                     src={servicioSeleccionado.img} 
                     alt="imagen del servicio" 
                   />
                 </motion.div>
                 
+                {/* Contenido */}
                 <motion.div 
-                  className="p-8 flex flex-col justify-center gap-4"
+                  className="p-4 lg:p-8 flex flex-col justify-center gap-4 overflow-y-auto lg:overflow-visible"
                   initial={{ opacity: 0, x: 50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.3 }}
                 >
                   <motion.h1 
-                    className="text-2xl font-semibold text-gray-900"
+                    className="text-xl lg:text-2xl font-semibold text-gray-900"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4 }}
@@ -159,7 +163,7 @@ export default function Services() {
                   </motion.h1>
                   
                   <motion.p 
-                    className="text-xl text-gray-800 leading-relaxed"
+                    className="text-base lg:text-lg text-gray-800 leading-relaxed"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5 }}
@@ -168,13 +172,23 @@ export default function Services() {
                   </motion.p>
                   
                   <motion.p 
-                    className="text-lg font-semibold text-green-600"
+                    className="text-lg font-semibold text-green-600 mt-4"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.6, type: "spring" }}
                   >
                     {servicioSeleccionado.precio}
                   </motion.p>
+                  
+                  {/* Botón de cerrar para móvil */}
+                  <motion.button
+                    className="lg:hidden bg-purple-600 text-white py-2 px-4 rounded-lg mt-4"
+                    onClick={() => setServicioSeleccionado(null)}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Cerrar
+                  </motion.button>
                 </motion.div>
               </motion.div>
             </motion.div>
